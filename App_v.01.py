@@ -61,11 +61,6 @@ class GuiApp(object):
     def start(self):
         self.master.mainloop()
         
-master = Tk()
-app = GuiApp(master)
-app.start()
-
-
 # parte de inicializacao do programa (nao mexer)
 
 def main():
