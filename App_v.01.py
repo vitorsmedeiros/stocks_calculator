@@ -64,3 +64,17 @@ class GuiApp(object):
 master = Tk()
 app = GuiApp(master)
 app.start()
+
+
+# parte de inicializacao do programa (nao mexer)
+
+def main():
+
+	master = Tk()
+	app = GuiApp(master)
+	app.start()
+
+	exit()
+
+if __name__ == '__main__':
+	main()
