@@ -1,16 +1,6 @@
-
-# coding: utf-8
-
-# In[7]:
-
-
 import pandas as pd
 from Tkinter import *
 from tkMessageBox import showinfo
-
-
-
-# In[8]:
 
 
 def valor_alvo(val_ini,qt,tx,ct=12.0):
@@ -20,10 +10,6 @@ def valor_alvo(val_ini,qt,tx,ct=12.0):
     val_exp = val_exp/qt
     return val_exp
     
-
-
-# In[11]:
-
 
 class GuiApp(object):
     def __init__(self, master):
@@ -67,9 +53,6 @@ class GuiApp(object):
         quantidade = float(self.entry_qtde.get().replace(',','.'))
         tir = float(self.entry_tir.get().replace(',','.'))/100
         
-#         print "valor inicial: {}\nQuantidade: {}\nTaxa de Retorno: {}\nValor Final: {}\n".\
-#         format(valor_inicial,quantidade,tir,valor_final)
-        
         result = valor_alvo(valor_inicial,quantidade,tir)
         result_str = 'Venda sugerida no valor:\n{:.2f}'.format(result).replace(".",',')
         
@@ -78,18 +61,6 @@ class GuiApp(object):
     def start(self):
         self.master.mainloop()
         
-
-
-# In[12]:
-
-
 master = Tk()
 app = GuiApp(master)
 app.start()
-
-
-# In[ ]:
-
-
-
-
