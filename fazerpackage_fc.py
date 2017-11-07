@@ -12,10 +12,10 @@ base = None
 if sys.platform == "win32":
     base = "Win32GUI"
 
-setup(  name = "Forecast Validator",
+setup(  name = "Stock Calculator",
         version = "0.3",
-        description = "Validacao do Forecast",
+        description = "Calculate Stock based a tax",
         options = {"build_exe": build_exe_options},
-        executables = [Executable("Validador.py", base=base)])
+        executables = [Executable("setup.py", base=base)])
 
 # 
